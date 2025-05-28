@@ -6,8 +6,8 @@ import pandas as pd
 
 # 텔레그램 봇에 메시지를 보내는 함수
 def send_telegram_message(message):
-    bot_token = '6804254258:AAHZzOgWz0mzv-VRiW74AIroOZnTFxqu3w8'  # 봇 토큰을 여기에 입력하세요
-    chat_id = '440276118'  # 채팅 ID를 여기에 입력하세요
+    bot_token = '봇 토큰을 여기에 입력하세요'  # 봇 토큰을 여기에 입력하세요
+    chat_id = '채팅 id를 입력하세요'  # 채팅 ID를 여기에 입력하세요
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     params = {"chat_id": chat_id, "text": message, "parse_mode": "HTML"}
     response = requests.post(url, params=params)
